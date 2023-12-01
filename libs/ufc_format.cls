@@ -6,14 +6,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{libs/ufc_format}[15/12/2020 v1.0 ufc template beamer]
+\ProvidesClass{templatebeamerufc/libs/ufc_format}[15/12/2020 v1.0 ufc template beamer]
 
-\PassOptionsToPackage{svgnames}{xcolor} 
+\PassOptionsToPackage{svgnames}{xcolor}
 \LoadClass[compress, 10pt]{beamer}
 
 %% Putting the background image in the frames
-\usebackgroundtemplate{\includegraphics[width=1.7\paperwidth]{libs/logoUFCbackground.png}}
-\logo{\includegraphics[scale=0.1]{libs/emblemufc.pdf}\hspace{9.7cm} \vspace{-0.2cm}}
+\usebackgroundtemplate{\includegraphics[width=1.7\paperwidth]{templatebeamerufc/libs/logoUFCbackground.png}}
+\logo{\includegraphics[scale=0.1]{templatebeamerufc/libs/emblemufc.pdf}\hspace{9.7cm} \vspace{-0.2cm}}
 
 %% Packages Used
 \RequirePackage[utf8]{inputenc}
@@ -71,18 +71,18 @@
 {
   \leavevmode%
   \hbox{%
- 
+
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
     \usebeamerfont{author in head/foot}\insertshortauthor~~\insertshortinstitute
   \end{beamercolorbox}%
- 
+
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot} \insertshorttitle
     \usebeamerfont{title in head/foot}
   \end{beamercolorbox}%
- 
+
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
     \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
   \end{beamercolorbox}}%
   \vskip0pt%
 }
@@ -91,7 +91,7 @@
 
 % command of the example
 \renewcommand{\example}[1]{\textcolor{blue_theme}{\textbf{#1}}}
-% command of the emphases 
+% command of the emphases
 \renewcommand{\emph}[1]{\textcolor{red}{\textbf{#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,7 +99,7 @@
 
 %% draw the blocks
 \setbeamertemplate{blocks}[rounded][shadow=true]
-% \setbeamercolor{separation line}{use=structure,bg=structure.fg!50!bg} % color on the top 
+% \setbeamercolor{separation line}{use=structure,bg=structure.fg!50!bg} % color on the top
 
 % block
 \setbeamercolor*{block title}{fg=white, bg=blue_theme}
@@ -168,7 +168,7 @@
 
 % create the source of the image
 \newcommand{\source}[1]{
-    \caption*{\textcolor{blue_theme}{Fonte:} {#1}} 
+    \caption*{\textcolor{blue_theme}{Fonte:} {#1}}
 }
 
 % create a command for UFC
@@ -184,7 +184,7 @@
     \normalsize{#1}
 }
 
-% 
+%
 \newcommand{\email}[1]{
     \texttt{
       \href{mailto:#1}{#1}
