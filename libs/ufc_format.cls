@@ -36,6 +36,7 @@
 
 % colors
 \definecolor{blue_theme}{RGB}{0, 83, 134}
+\definecolor{dark_blue}{RGB}{0, 62, 100}
 \definecolor{yellow}{RGB}{206, 177, 68}
 \definecolor{black}{RGB}{0, 0, 0}
 \definecolor{white}{RGB}{255, 255, 255}
@@ -56,14 +57,14 @@
 
 
 \setbeamercolor{section in head/foot}{bg=blue_theme, fg=white}
-\setbeamercolor{subsection in head/foot}{bg=yellow, fg=white}
+\setbeamercolor{subsection in head/foot}{bg=dark_blue, fg=white}
 \setbeamercolor{institute in head/foot}{bg=blue_theme, fg=white}
 \setbeamerfont{block title}{size={}}
 
 
 %% ---------- bottom fields ---------------------
 \setbeamercolor{author in head/foot}{bg=blue_theme, fg=white}
-\setbeamercolor{title in head/foot}{bg=yellow, fg=white}
+\setbeamercolor{title in head/foot}{bg=dark_blue, fg=white}
 \setbeamercolor{date in head/foot}{bg=blue_theme, fg=white}
 
 % footer style
